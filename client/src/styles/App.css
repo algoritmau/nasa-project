@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Futurium';
+  src: url('../fonts/Futurium-Regular.woff2') format('woff2'),
+    url('../fonts/Futurium-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Drive Mono';
+  src: url('../fonts/DriveMono-Regular.woff2') format('woff2'),
+    url('../fonts/DriveMono-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-body: 'Futurium', sans-serif;
+  --font-mono: 'Drive Mono', monospace;
+}
+
+body,
+.Arwes-root-0-1-1,
+button {
+  font-family: var(--font-body) !important;
+}
+
+button {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 2 !important;
+}
+
+form {
+  align-items: center !important;
+  gap: 14px !important;
+  margin: 32px auto 0 auto !important;
+  display: grid !important;
+  width: 64%;
+}
+
+form label {
+  line-height: 1 !important;
+  width: fit-content;
+  margin-block-start: 2px !important;
+}
+
+form span {
+  margin: 24px auto 8px auto;
+  grid-column: 1 / 3;
+}
+
+input,
+select {
+  font-family: var(--font-mono) !important;
+  font-size: 15px !important;
+  padding: 4px 8px;
+  height: 44px;
+  color: #01819a;
+}
+
+footer {
+  margin-block-start: 2.4rem;
+}
