@@ -61,6 +61,17 @@ select {
   color: #01819a;
 }
 
+div[class^='Table-root'] {
+  margin-block-start: 24px;
+}
+
+div[class^='Table-root'],
+div[class^='Table-root'] table,
+div[class^='Table-root'] thead,
+div[class^='Table-root'] tbody {
+  font-family: var(--font-mono) !important;
+}
+
 footer {
   margin-block-start: 2.4rem;
 }
