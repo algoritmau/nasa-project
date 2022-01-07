@@ -1,6 +1,11 @@
 {
-  "name": "nasa-project-client",
-  "version": "0.1.0",
+  "name": "nasa-mission-control-client",
+  "version": "0.0.1",
+  "description": "NASA Mission Control Client",
+  "author": {
+    "name": "Mauricio Paternina",
+    "email": "hello@spaceinva.dev"
+  },
   "private": true,
   "dependencies": {
     "arwes": "^1.0.0-alpha.5",
@@ -14,6 +19,14 @@
     "build": "react-scripts build",
     "eject": "react-scripts eject"
   },
+  "keywords": [
+    "React",
+    "ReactJS",
+    "React Router",
+    "Arwes",
+    "NASA",
+    "Zero to Mastery"
+  ],
   "eslintConfig": {
     "extends": [
       "react-app"
