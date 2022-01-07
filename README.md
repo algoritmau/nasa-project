@@ -1,4 +1,4 @@
-# Nasa Project
+# Nasa Mission Control
 
 This project simulates a NASA Mission Control Dashboard. It's a full-stack app with its own API and database.
 
