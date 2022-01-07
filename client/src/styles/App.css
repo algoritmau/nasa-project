@@ -26,6 +26,33 @@ button {
   font-family: var(--font-body) !important;
 }
 
+svg[class^='Logo-root'] + span {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+a[class^='Header-link'] {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+a[class^='Header-link'] > i {
+  margin: 0 !important;
+}
+
+.header-logo {
+  display: flex;
+}
+
+div[class^='ArwesSounds(Header)-children'] div[class^='Centered-root'] {
+  display: flex;
+  justify-content: space-between;
+}
+
 button {
   text-transform: uppercase;
   letter-spacing: 3px;
