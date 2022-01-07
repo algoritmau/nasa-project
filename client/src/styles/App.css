@@ -85,6 +85,8 @@ select {
   padding: 4px 8px;
   height: 44px;
   color: #01819a;
+  border-radius: 4px !important;
+  border: 1px solid #fefefe64;
 }
 
 div[class^='Table-root'] {
@@ -100,4 +102,12 @@ div[class^='Table-root'] tbody {
 
 footer {
   margin-block-start: 2.4rem;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; /* Remove default arrow */
+  /* TODO: Add custom arrow */
+  /* background-image: url(...);   Add custom arrow */
 }
