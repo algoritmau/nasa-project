@@ -8,9 +8,8 @@
 }
 
 @font-face {
-  font-family: 'Drive Mono';
-  src: url('../fonts/DriveMono-Regular.woff2') format('woff2'),
-    url('../fonts/DriveMono-Regular.woff') format('woff');
+  font-family: 'JetBrains Mono';
+  src: url('../fonts/JetBrainsMono-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -18,7 +17,7 @@
 
 :root {
   --font-body: 'Futurium', sans-serif;
-  --font-mono: 'Drive Mono', monospace;
+  --font-mono: 'JetBrains Mono', monospace;
 }
 
 body,
