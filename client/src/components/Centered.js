@@ -12,13 +12,10 @@ const styles = () => ({
   }
 })
 
-const Centered = (props) => {
-  const { classes, className, children, ...rest } = props
-  return (
-    <div className={`${classes.root} ${className}`} {...rest}>
-      {children}
-    </div>
-  )
-}
+const Centered = ({ classes, className, children, ...rest }) => (
+  <div className={`${classes.root} ${className}`} {...rest}>
+    {children}
+  </div>
+)
 
 export default withStyles(styles)(Centered)

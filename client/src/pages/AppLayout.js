@@ -27,9 +27,7 @@ const styles = () => ({
   }
 })
 
-const AppLayout = (props) => {
-  const { sounds, classes } = props
-
+const AppLayout = ({ sounds, classes }) => {
   const [frameVisible, setFrameVisible] = useState(true)
   const animateFrame = () => {
     setFrameVisible(false)
@@ -85,7 +83,6 @@ const AppLayout = (props) => {
                   }
                 />
                 <Route
-                  exact
                   path="/history"
                   element={
                     <History entered={anim.entered} launches={launches} />

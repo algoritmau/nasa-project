@@ -10,34 +10,34 @@ const styles = () => ({
   }
 })
 
-const Upcoming = (props) => {
-  const { entered, launches, classes, abortLaunch } = props
-
-  const tableBody = useMemo(() => {
-    return launches
-      ?.filter((launch) => launch.upcoming)
-      .map((launch) => {
-        return (
-          <tr key={String(launch.flightNumber)}>
-            <td>
-              <Clickable style={{ color: 'red' }}>
-                <Link
-                  className={classes.link}
-                  onClick={() => abortLaunch(launch.flightNumber)}
-                >
-                  ✖
-                </Link>
-              </Clickable>
-            </td>
-            <td>{launch.flightNumber}</td>
-            <td>{new Date(launch.launchDate).toDateString()}</td>
-            <td>{launch.mission}</td>
-            <td>{launch.rocket}</td>
-            <td>{launch.target}</td>
-          </tr>
-        )
-      })
-  }, [launches, abortLaunch, classes.link])
+const Upcoming = ({ entered, launches, classes, abortLaunch }) => {
+  const tableBody = useMemo(
+    () =>
+      launches
+        ?.filter((launch) => launch.upcoming)
+        .map((launch) => {
+          return (
+            <tr key={String(launch.flightNumber)}>
+              <td>
+                <Clickable style={{ color: 'red' }}>
+                  <Link
+                    className={classes.link}
+                    onClick={() => abortLaunch(launch.flightNumber)}
+                  >
+                    ✖
+                  </Link>
+                </Clickable>
+              </td>
+              <td>{launch.flightNumber}</td>
+              <td>{new Date(launch.launchDate).toDateString()}</td>
+              <td>{launch.mission}</td>
+              <td>{launch.rocket}</td>
+              <td>{launch.target}</td>
+            </tr>
+          )
+        }),
+    [launches, abortLaunch, classes.link]
+  )
 
   return (
     <Appear id="upcoming" animate show={entered}>
