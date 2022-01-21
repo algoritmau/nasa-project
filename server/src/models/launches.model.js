@@ -13,6 +13,8 @@ const launch = {
 
 launches.set(launch.fligthNumber, launch)
 
+const getLaunches = () => Array.from(launches.values())
+
 module.exports = {
-  launches
+  getLaunches
 }

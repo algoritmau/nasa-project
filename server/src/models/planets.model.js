@@ -43,7 +43,9 @@ const loadPlanetsData = () =>
       })
   })
 
+const getPlanets = () => habitablePlanets
+
 module.exports = {
-  loadPlanetsData,
-  planets: habitablePlanets
+  getPlanets,
+  loadPlanetsData // TODO: confirm potential removal
 }
