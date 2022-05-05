@@ -27,6 +27,7 @@ button {
 }
 
 svg[class^='Logo-root'] + span {
+  font-family: var(--font-body) !important;
   font-size: 22px;
   font-weight: 400;
 }
