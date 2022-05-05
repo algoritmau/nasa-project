@@ -9,7 +9,9 @@
   "main": "src/server.js",
   "scripts": {
     "watch": "nodemon src/server.js",
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "test": "jest",
+    "test-watch": "jest --watch"
   },
   "keywords": [
     "Node",
@@ -27,6 +29,8 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "jest": "^28.0.3",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.3"
   }
 }
